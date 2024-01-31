@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import{FaTime} from "react-icons/fa";
-import{CimenuFries} from "react-icons/fa";
+import { FaTimes, FaAlignJustify } from "react-icons/fa";
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
@@ -24,17 +23,17 @@ const NavBar = () => {
           </ScrollLink>
         </ul>
       </div>
-    </>
-  
+    </>;
+
   return (
     <nav>
-      <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 ">
+      <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 relative">
         <div className="flex-1 flex place-items-center" >
           <span className="text-3xl font-bold">Logo</span>
         </div>
 
-        <div className="lg:flex md:flex lg: flex-1 items center justify-end font-normal hidden">
-          <div className="flex-10 ">
+        <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
+          <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-[18px] ">
               <RouterLink to="http://localhost:5173/" className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer text-white no-underline">
                 <li>Home</li>
@@ -49,12 +48,13 @@ const NavBar = () => {
               </RouterLink>
             </ul>
           </div>
-        </div>w
-        <div>
-            {click && content}
         </div>
-        <button>
-            {click ? <FaTime/> : <CimenuFries/>} 
+        
+        <div className="lg:hidden">
+          {click && content}
+        </div>
+        <button onClick={() => setClick(!click)} className="block sm:hidden ">
+          {click ? <FaTimes /> : <FaAlignJustify />} 
         </button>
       </div>
     </nav>
