@@ -16,6 +16,11 @@ export default function Contact(){
         <NavBar/>
         </div>
            <C_Contact/>
+
+
+
+
+           
         </>
      
         

@@ -22,7 +22,7 @@ const NavBar = () => {
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Home</li>
           </ScrollLink>
 
-          <ScrollLink to="src/Pages/Contact" spy={true} smooth={true}>
+          <ScrollLink to="Contact" spy={true} smooth={true}>
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Contact</li>
           </ScrollLink>
 
@@ -47,15 +47,15 @@ const NavBar = () => {
           <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-[18px] ">
               {/* Liens pour le menu de navigation */}
-              <RouterLink to="Home" className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer text-white no-underline">
+              <RouterLink to="/Home" className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer text-white no-underline">
                 <li>Home</li>
               </RouterLink>
 
-              <RouterLink to="Contact" className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer text-white no-underline">
+              <RouterLink to="/Contact" className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer text-white no-underline">
                 <li>Contact</li>
               </RouterLink>
 
-              <RouterLink to="About" className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer text-white no-underline">
+              <RouterLink to="/About" className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer text-white no-underline">
                 <li>About</li>
               </RouterLink>
             </ul>
