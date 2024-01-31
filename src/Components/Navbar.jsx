@@ -22,7 +22,7 @@ const NavBar = () => {
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Home</li>
           </ScrollLink>
 
-          <ScrollLink to="src/Pages/Contact" spy={true} smooth={true}>
+          <ScrollLink to="Contact" spy={true} smooth={true}>
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Contact</li>
           </ScrollLink>
 
