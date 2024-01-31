@@ -1,7 +1,7 @@
 // J'importe les bibliothèques nécessaires depuis React et React Router
 import React, { useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
+// import { Link as ScrollLink } from "react-scroll";
 
 // J'importe les icônes du menu depuis la bibliothèque React Icons
 import { FaAlignJustify } from "react-icons/fa";
@@ -18,17 +18,17 @@ const NavBar = () => {
       <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition">
         <ul className="text-center text-xl p-20">
           {/* Liens pour le menu mobile */}
-          <ScrollLink to="Home" spy={true} smooth={true}>
+          <RouterLink to="/Home" spy={true} smooth={true} className="cursor-pointer text-white no-underline">
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Home</li>
-          </ScrollLink>
+          </RouterLink>
 
-          <ScrollLink to="src/Pages/Contact" spy={true} smooth={true}>
+          <RouterLink to="/Contact" spy={true} smooth={true} className="cursor-pointer text-white no-underline">
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Contact</li>
-          </ScrollLink>
+          </RouterLink>
 
-          <ScrollLink to="About" spy={true} smooth={true}>
+          <RouterLink to="/About" spy={true} smooth={true} className="cursor-pointer text-white no-underline">
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">About</li>
-          </ScrollLink>
+          </RouterLink>
         </ul>
       </div>
     </>;
@@ -47,15 +47,15 @@ const NavBar = () => {
           <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-[18px] ">
               {/* Liens pour le menu de navigation */}
-              <RouterLink to="http://localhost:10000/" className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer text-white no-underline">
+              <RouterLink to="/Home" className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer text-white no-underline">
                 <li>Home</li>
               </RouterLink>
 
-              <RouterLink to="http://localhost:10000/Contact" className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer text-white no-underline">
+              <RouterLink to="/Contact" className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer text-white no-underline">
                 <li>Contact</li>
               </RouterLink>
 
-              <RouterLink to="http://localhost:10000/About" className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer text-white no-underline">
+              <RouterLink to="/About" className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer text-white no-underline">
                 <li>About</li>
               </RouterLink>
             </ul>
