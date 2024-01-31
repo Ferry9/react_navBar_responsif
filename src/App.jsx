@@ -6,6 +6,7 @@ import './App.css'
 
 import Home from './Pages/Home'
 import Contact from './Pages/Contact'
+import About from './Pages/About'
 
 
 
@@ -20,6 +21,7 @@ export default function App(){
             <Route index element={<Home />} />
             <Route path='/Home' element={<Home/>}/>
             <Route path='/Contact' element={<Contact/>}/>
+            <Route path='/About' element={<About/>}/>
           </Route>
         </Routes>
 

@@ -6,7 +6,7 @@
 export default function C_Contact(){
     return (
         <>
-            <h1>Page Contact.</h1>
+            <h2>Page Contact.</h2>
 
         </>
     )

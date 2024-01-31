@@ -6,7 +6,7 @@
 export default function C_Home(){
     return (
         <>
-            <h1>Page acceuil.</h1>
+            <h2>Page acceuil.</h2>
 
         </>
     )
