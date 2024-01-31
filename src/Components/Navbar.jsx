@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import{FaTime} from "react-icons/fa";
+import{CimenuFries} from "react-icons/fa";
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
@@ -47,7 +49,13 @@ const NavBar = () => {
               </RouterLink>
             </ul>
           </div>
+        </div>w
+        <div>
+            {click && content}
         </div>
+        <button>
+            {click ? <FaTime/> : <CimenuFries/>} 
+        </button>
       </div>
     </nav>
   );
