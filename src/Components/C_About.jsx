@@ -3,7 +3,7 @@ const C_About = ()=> {
     return (
       <>
 
-         <h2>Page à propos</h2>   
+         <h2>A propos</h2>   
       </>
     )
 }
